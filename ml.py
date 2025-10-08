@@ -21,12 +21,6 @@ from pathlib import Path
 PROJECT_DIR = Path(__file__).resolve().parent
 ROOT_DIR        = PROJECT_DIR / "artist20"
 TRAINVAL_DIR    = ROOT_DIR / "train_val"
-TEST_DIR        = ROOT_DIR / "test"
-VOCALS_OUT_ROOT = PROJECT_DIR / "separated"
-MEL_DIR         = PROJECT_DIR / "mel_spec"   
-# 輸出可放在專案資料夾，WSL 重開也不會消失
-Path(VOCALS_OUT_ROOT).mkdir(parents=True, exist_ok=True)
-Path(MEL_DIR).mkdir(parents=True, exist_ok=True)
 
 # parameters
 SR = 22050
